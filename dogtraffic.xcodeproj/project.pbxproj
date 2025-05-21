@@ -29,9 +29,22 @@
 		AD4482702DD667A70088EDB0 /* dogtrafficUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dogtrafficUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AD4482AA2DDD5BC00088EDB0 /* Exceptions for "dogtraffic" folder in "dogtraffic" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AD4482552DD667A60088EDB0 /* dogtraffic */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AD4482582DD667A60088EDB0 /* dogtraffic */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AD4482AA2DDD5BC00088EDB0 /* Exceptions for "dogtraffic" folder in "dogtraffic" target */,
+			);
 			path = dogtraffic;
 			sourceTree = "<group>";
 		};
@@ -399,6 +412,8 @@
 				DEVELOPMENT_TEAM = 4GYMV4XGS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dogtraffic/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to automatically find nearby dog parks around you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +443,8 @@
 				DEVELOPMENT_TEAM = 4GYMV4XGS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dogtraffic/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to automatically find nearby dog parks around you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

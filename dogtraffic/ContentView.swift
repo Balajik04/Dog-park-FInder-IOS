@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ParksListView()
+                    .onAppear {
+                        let appearance = UINavigationBarAppearance()
+                        appearance.configureWithOpaqueBackground()
+                        appearance.backgroundColor = UIColor(AppColors.appBackground)
+                        appearance.titleTextAttributes = [.foregroundColor: UIColor(AppColors.textPrimary)]
+                        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor(AppColors.textPrimary)]
+                        
+                        UINavigationBar.appearance().standardAppearance = appearance
+                        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+                        UINavigationBar.appearance().compactAppearance = appearance
+                    }
     }
 }
 
