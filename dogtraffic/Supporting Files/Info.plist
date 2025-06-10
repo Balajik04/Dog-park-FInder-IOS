@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>GIDClientID</key>
+    <string>308964035831-6o2921koineckcpdqe7ta77763p96m57.apps.googleusercontent.com</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.308964035831-6o2921koineckcpdqe7ta77763p96m57</string>
+            </array>
+        </dict>
+    </array>
+    <key>Privacy - Location When In Use Usage Description</key>
+    <string>This app needs your location to find nearby dog parks.</string>
+    <key>Privacy - Photo Library Usage Description</key>
+    <string>This app needs access to your photo library so you can select a profile picture for your dog.</string>
+</dict>
+</plist>

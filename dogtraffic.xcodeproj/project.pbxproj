@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AD4482EB2DF4CC180088EDB0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AD4482EA2DF4CC180088EDB0 /* FirebaseAnalytics */; };
+		AD4482ED2DF4CC1D0088EDB0 /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = AD4482EC2DF4CC1D0088EDB0 /* FirebaseAI */; };
+		AD4482EF2DF4CC240088EDB0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD4482EE2DF4CC240088EDB0 /* FirebaseAuth */; };
+		AD4482F12DF4CC280088EDB0 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = AD4482F02DF4CC280088EDB0 /* FirebaseCore */; };
+		AD4482F32DF4CC2D0088EDB0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = AD4482F22DF4CC2D0088EDB0 /* FirebaseCrashlytics */; };
+		AD4482F52DF4CC350088EDB0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AD4482F42DF4CC350088EDB0 /* FirebaseDatabase */; };
+		AD4482F72DF4CC3C0088EDB0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD4482F62DF4CC3C0088EDB0 /* FirebaseFirestore */; };
+		AD4482FA2DF4D2910088EDB0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = AD4482F92DF4D2910088EDB0 /* GoogleSignIn */; };
+		AD4482FC2DF4D2910088EDB0 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD4482FB2DF4D2910088EDB0 /* GoogleSignInSwift */; };
+		AD44830A2DF615C40088EDB0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AD4483092DF615C40088EDB0 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AD4482672DD667A70088EDB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -33,7 +46,7 @@
 		AD4482AA2DDD5BC00088EDB0 /* Exceptions for "dogtraffic" folder in "dogtraffic" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				"Supporting Files/Info.plist",
 			);
 			target = AD4482552DD667A60088EDB0 /* dogtraffic */;
 		};
@@ -65,6 +78,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4482FC2DF4D2910088EDB0 /* GoogleSignInSwift in Frameworks */,
+				AD4482F52DF4CC350088EDB0 /* FirebaseDatabase in Frameworks */,
+				AD4482FA2DF4D2910088EDB0 /* GoogleSignIn in Frameworks */,
+				AD44830A2DF615C40088EDB0 /* FirebaseStorage in Frameworks */,
+				AD4482EB2DF4CC180088EDB0 /* FirebaseAnalytics in Frameworks */,
+				AD4482EF2DF4CC240088EDB0 /* FirebaseAuth in Frameworks */,
+				AD4482F32DF4CC2D0088EDB0 /* FirebaseCrashlytics in Frameworks */,
+				AD4482F12DF4CC280088EDB0 /* FirebaseCore in Frameworks */,
+				AD4482ED2DF4CC1D0088EDB0 /* FirebaseAI in Frameworks */,
+				AD4482F72DF4CC3C0088EDB0 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +114,7 @@
 				AD4482582DD667A60088EDB0 /* dogtraffic */,
 				AD4482692DD667A70088EDB0 /* dogtrafficTests */,
 				AD4482732DD667A70088EDB0 /* dogtrafficUITests */,
+				AD4482E92DF4CC180088EDB0 /* Frameworks */,
 				AD4482572DD667A60088EDB0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +127,13 @@
 				AD4482702DD667A70088EDB0 /* dogtrafficUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD4482E92DF4CC180088EDB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +156,16 @@
 			);
 			name = dogtraffic;
 			packageProductDependencies = (
+				AD4482EA2DF4CC180088EDB0 /* FirebaseAnalytics */,
+				AD4482EC2DF4CC1D0088EDB0 /* FirebaseAI */,
+				AD4482EE2DF4CC240088EDB0 /* FirebaseAuth */,
+				AD4482F02DF4CC280088EDB0 /* FirebaseCore */,
+				AD4482F22DF4CC2D0088EDB0 /* FirebaseCrashlytics */,
+				AD4482F42DF4CC350088EDB0 /* FirebaseDatabase */,
+				AD4482F62DF4CC3C0088EDB0 /* FirebaseFirestore */,
+				AD4482F92DF4D2910088EDB0 /* GoogleSignIn */,
+				AD4482FB2DF4D2910088EDB0 /* GoogleSignInSwift */,
+				AD4483092DF615C40088EDB0 /* FirebaseStorage */,
 			);
 			productName = dogtraffic;
 			productReference = AD4482562DD667A60088EDB0 /* dogtraffic.app */;
@@ -210,6 +251,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				AD4482AD2DDD6F320088EDB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AD4482F82DF4D2770088EDB0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AD4482572DD667A60088EDB0 /* Products */;
@@ -409,14 +451,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "dogtraffic/Supporting Files/dogtraffic.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"dogtraffic/Preview Content\"";
 				DEVELOPMENT_TEAM = 4GYMV4XGS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = dogtraffic/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to automatically find nearby dog parks around you.";
+				INFOPLIST_FILE = "dogtraffic/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to automatically find nearby dog parks around you.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library so you can select a profile picture for your dog";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,14 +484,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "dogtraffic/Supporting Files/dogtraffic.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"dogtraffic/Preview Content\"";
 				DEVELOPMENT_TEAM = 4GYMV4XGS6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = dogtraffic/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to automatically find nearby dog parks around you.";
+				INFOPLIST_FILE = "dogtraffic/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to automatically find nearby dog parks around you.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library so you can select a profile picture for your dog";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,7 +634,68 @@
 				minimumVersion = 11.13.0;
 			};
 		};
+		AD4482F82DF4D2770088EDB0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD4482EA2DF4CC180088EDB0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482AD2DDD6F320088EDB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		AD4482EC2DF4CC1D0088EDB0 /* FirebaseAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482AD2DDD6F320088EDB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAI;
+		};
+		AD4482EE2DF4CC240088EDB0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482AD2DDD6F320088EDB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AD4482F02DF4CC280088EDB0 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482AD2DDD6F320088EDB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		AD4482F22DF4CC2D0088EDB0 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482AD2DDD6F320088EDB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		AD4482F42DF4CC350088EDB0 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482AD2DDD6F320088EDB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		AD4482F62DF4CC3C0088EDB0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482AD2DDD6F320088EDB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AD4482F92DF4D2910088EDB0 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482F82DF4D2770088EDB0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		AD4482FB2DF4D2910088EDB0 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482F82DF4D2770088EDB0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		AD4483092DF615C40088EDB0 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD4482AD2DDD6F320088EDB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD44824E2DD667A60088EDB0 /* Project object */;
 }

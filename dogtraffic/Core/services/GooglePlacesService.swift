@@ -32,6 +32,20 @@ class GooglePlacesService {
         }
         performRequest(url: url, requestType: "TextSearch", completion: completion)
     }
+    
+    func fetchParkDetailsPublisher(placeId: String) -> AnyPublisher<DogPark, Error> {
+            Future<DogPark, Error> { [weak self] promise in
+                self?.fetchPlaceDetails(placeId: placeId) { result in
+                    switch result {
+                    case .success(let park):
+                        promise(.success(park))
+                    case .failure(let error):
+                        promise(.failure(error))
+                    }
+                }
+            }
+            .eraseToAnyPublisher()
+        }
 
     // NEW: Nearby Search
     func searchNearbyDogParks(latitude: Double, longitude: Double, radiusInMeters: Int = 5000, completion: @escaping (Result<[DogPark], Error>) -> Void) {
